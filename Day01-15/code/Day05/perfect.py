@@ -18,3 +18,11 @@ for num in range(2, 10000):
                 result += num // factor
     if result == num:
         print(num)
+
+for num in range(2, 10000):
+    result = 0
+    for factor in range(1, num):
+        if num % factor == 0:
+            result += factor
+    if result == num:
+        print(num)
